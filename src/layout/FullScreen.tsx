@@ -1,7 +1,15 @@
 import React, { PropsWithChildren } from "react";
 
-export const FullScreen: React.FC<
+export const FullScreen = React.forwardRef<
+  HTMLDivElement,
   PropsWithChildren & React.HTMLAttributes<HTMLDivElement>
-> = ({ children, className }) => {
-  return <div className={`w-full h-screen grid grid-rows-6 grid-cols-4 ${className}`}>{children}</div>;
-};
+>(({ children, className }, ref) => {
+  return (
+    <div
+      ref={ref}
+      className={`w-full h-screen main-grid ${className}`}
+    >
+      {children}
+    </div>
+  );
+});
