@@ -10,7 +10,7 @@ export const QuoteCard: React.FC<IQuoteCardProps> = ({item}) => {
 
   return bgColor ? (
     <div
-      className={`rounded-xl text-black ${bgColor} h-full w-full flex justify-center items-center`}
+      className={`rounded-xl text-black ${bgColor} h-full w-full flex justify-center items-center p-4 hover:`}
     >
       <BodyText>{item.quote}</BodyText>
     </div>

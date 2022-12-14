@@ -8,7 +8,7 @@ export const QuoteCards = React.forwardRef<HTMLDivElement>((_, ref) => {
   const rowSpanName = rowSpanClassName[rowSpan - 1];
 
   return (
-    <div ref={ref} className="main-grid">
+    <div ref={ref} className="main-grid min-h-[180px] break-all">
       {dummyQuotes.map((item, index) => (
         <div key={index} className={`grid col-span-1 ${rowSpanName}`}>
           <QuoteCard item={item} />
