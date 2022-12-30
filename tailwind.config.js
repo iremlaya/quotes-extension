@@ -13,6 +13,9 @@ module.exports = {
       blue: "#B8D4FF",
       yellow: "#FFF500",
     },
+    boxShadow: {
+      default: "0px 11px 65px",
+    },
     extend: {
       fontFamily: {
         lexend: ["Lexend", "sans-serif"],
